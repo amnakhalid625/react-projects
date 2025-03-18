@@ -1,0 +1,86 @@
+/* cal.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* This sets the base font size to 10px for easier rem calculations */
+}
+
+.container {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    height: 500px;
+    background: #282828;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow buttons to take up remaining space */
+}
+
+.com-button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Space between button rows */
+}
+
+button {
+    border-radius: 50%;
+    padding: 1.5rem; /* Increased padding for larger buttons */
+    background-color: #f9f9f9;
+    color: #000;
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 5px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #e0e0e0; /* Lighten button on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Button press effect */
+}
+
+button:last-child {
+    background-color: #ffcc00; /* Special color for the '=' button */
+    color: #fff;
+}
+
+button:last-child:hover {
+    background-color: #e6b800; /* Darken on hover */
+}
